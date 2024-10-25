@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVN Sai Sathvik</title>
+
+    <style>
+        /* Base styles */
+        body {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffcc00;
+            opacity: 0;
+            animation: slideIn 0.5s forwards;
+            font-weight: 400;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            animation-delay: 0.3s;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            animation-delay: 0.5s;
+            font-size: 1.8rem;
+            color: #00bfff;
+        }
+
+        .intro, .projects, .contact {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ffcc00;
+            border-radius: 15px;
+            width: 70%;
+            margin: 20px auto;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+            background-color: #2a2a2a;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .aboutme, .skills {
+            margin: 30px auto;
+            width: 70%;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+        }
+
+        .aboutme {
+            animation-delay: 0.6s;
+        }
+
+        .skills {
+            animation-delay: 0.8s;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+            color: #ffcc00;
+            font-weight: 500;
+        }
+
+        p, li {
+            line-height: 1.6;
+            color: #d0d0d0;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .intro, .projects, .contact, .aboutme, .skills {
+                width: 90%;
+            }
+
+            img {
+                width: 120px;
+            }
+
+            h1, h2 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro, .projects, .contact, .aboutme, .skills {
+                width: 95%;
+            }
+
+            img {
+                width: 100px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p, li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SVN Sai Sathvik</h1>  
+    <h2>BTech Student</h2>
+
+    <p>
+        <img src="C:\Users\sathv\OneDrive\Desktop\sathvik photo3.jpg" alt="My Image">
+    </p>
+
+    <p class="intro">
+        "Hi, I'm Sathvik, a BTech student at IIIT Bangalore with a passion for software development. I enjoy working on innovative projects, particularly those involving machine learning, neural networks, and system design. While I also enjoy working on frontend web development, my primary focus is on creating impactful software solutions. When I'm not coding, I like to explore new technologies and play games."
+    </p>
+
+    <div class="aboutme">
+        <h3>About Me</h3>
+        <p>Education: IIIT Bangalore (2023-2028)</p>
+        <p>Current CGPA: 3.62/4</p>
+        <p>Technical skills: C++, Python, HTML, CSS, JavaScript, Matplotlib, Numpy, Pandas, Scikit-learn</p>
+    </div>
+
+    <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>Programming Languages:</strong> C++, Python, HTML, CSS, JavaScript</li>
+            <li><strong>Libraries/Frameworks:</strong> Matplotlib, Numpy, Pandas, Scikit-learn</li>
+            <li><strong>Tools:</strong> Git, GitHub, TensorFlow</li>
+        </ul>
+    </div>
+
+    <div class="projects">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>Electricity Bill Prediction System:</strong> Developed a machine learning model to predict electricity consumption for buildings using various features.</li>
+            <li><strong>Medicine Quality Control System:</strong> Built a system using neural networks and OCR to verify medicine quality and check expiry dates in hospitals (Smart India Hackathon 2024).</li>
+            <li><strong>Event Management System:</strong> Created a venue and event management system in C++ utilizing linked lists and file I/O.</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:saisathviksvn@gmail.com">saisathviksvn@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/svn-sai-sathvik-9b944a281" target="_blank">www.linkedin.com/in/svn-sai-sathvik-9b944a281</a></p>
+        <p>GitHub: <a href="https://github.com/svnsaisathvik/svnsaisathvik" target="_blank">https://github.com/svnsaisathvik/svnsaisathvik</a></p>
+    </div>
+</body>
+</html>
